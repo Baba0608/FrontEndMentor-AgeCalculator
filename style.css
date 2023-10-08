@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.box{
+    width: 700px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px 20px 200px 20px;
+    margin-bottom: 10px;
+}
+
+
+.birthdate{
+    padding: 30px;
+    display: flex;
+}
+
+.birth{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.inputbirth{
+    width:130px;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: 1px solid lightgrey;
+    margin-top: 5px;
+
+}
+
+.labelbirth{
+    font-size: 20px;
+    font-weight: bold;
+    color: grey;
+}
+
+.line{
+    margin: 0px 40px;
+}
+
+.image{
+    background-color: hsl(259, 100%, 65%);
+
+    width: 67px;
+
+    border-radius: 35px;
+    padding: 10px;
+    margin: -35px 0px;
+    margin-left: 90%;
+}
+
+
+.calculate{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.output{
+    font-size: 70px;
+    font-weight: bold;
+    padding-bottom: 5px;
+   
+}
+.output p span{
+    color: hsl(259, 100%, 65%);
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+
+}
+
+.arrow{
+    cursor: pointer;
+}
+
+.msg{
+    margin-top: 3px;
+    font-size: 13px;
+    color: hsl(0, 100%, 67%);
+    display: none;
+}
+
+.error{
+    border: 1px solid hsl(0, 100%, 67%);
+    background-color: rgb(248, 207, 207);
+}
+
+.errorlabel{
+    color: hsl(0, 100%, 67%);
+}
+
+@media (max-width:720px){
+    .box{
+        width: 90%;
+        height: 90%;
+    }
+}
+
+
+@media (max-width:650px){
+
+    .box {
+            width: 90%;
+            height: 90%;
+        }
+
+    .inputbirth{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .birthdate{
+        padding: 30px;
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+
+    .output{
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 5px;
+   
+}
+
+    .image img{
+        width: 30px;
+        height: 30px;
+        
+    }
+
+    .image{
+        width: 50px;
+        margin-left: 40%;
+        border-radius: 60px;
+        margin-top: -27px;
+    }
+
+}
+
+
+@media (max-width:375px) {
+
+    .box {
+        width: 90%;
+        height: 90%;
+        border-bottom-right-radius: 100px;
+    }
+
+    .inputbirth {
+        width: 100%;
+        font-size: 85%;
+        font-weight: bold;
+        padding: 5px 2px;
+    }
+
+    .birthdate {
+        padding: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .labelbirth{
+    font-size: 15px;
+    font-weight: bold;
+    color: grey;
+    }
+
+    .output {
+        font-size: 34px;
+        font-weight: bold;
+        padding-bottom: 5px;
+
+    }
+
+    
+
+}
